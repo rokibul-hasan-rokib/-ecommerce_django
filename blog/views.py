@@ -3,17 +3,13 @@ from .models import Blog
 
 # Create
 def create_blog(request):
-    if request.method == "POST":
-        title = request.POST['title']
-        content = request.POST['content']
-        Blog.objects.create(title=title, content=content)
-        return redirect('blog_list')
-    return render(request, 'blog/create_blog.html')
+    
+    return render(request, 'admin/modules/blog/index.html')
 
 # Read (List)
 def blog_list(request):
-    blogs = Blog.objects.all()
-    return render(request, 'blog/blog_list.html', {'blogs': blogs})
+   
+    return render(request, 'admin/modules/blog/index.html')
 
 # Update
 def update_blog(request, blog_id):
