@@ -3,8 +3,10 @@ from .models import Blog
 
 # Create
 def create_blog(request):
-    
-    return render(request, 'admin/modules/blog/index.html')
+    data = {
+        "title":"Rokib"
+    }
+    return render(request, 'admin/modules/blog/index.html',data)
 
 # Read (List)
 def blog_list(request):
