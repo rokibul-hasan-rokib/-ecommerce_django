@@ -5,7 +5,8 @@ from .models import Blog
 def create_blog(request):
     data = {
         "title":"blog create",
-        "name" : "Rokibul Hasan Rokib"
+        "name" : "Rokibul Hasan Rokib",
+        "route" : "index.html"
     }
     return render(request, 'admin/modules/blog/index.html',data)
 
