@@ -4,7 +4,8 @@ from .models import Blog
 # Create
 def create_blog(request):
     data = {
-        "title":"Rokib"
+        "title":"blog create",
+        "name" : "Rokibul Hasan Rokib"
     }
     return render(request, 'admin/modules/blog/index.html',data)
 
