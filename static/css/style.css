@@ -9,3 +9,11 @@ body{
 h1{
     font-family: 'Nunito', sans-serif;
 }
+
+.nav-link{
+    color: #000;
+}
+
+.nav-link:hover{
+    color: #000;
+}
