@@ -1,14 +1,8 @@
 console.log('script');
-rokib = 'Rokibul Hasan Rokib';
-console.log(rokib);
 
+const test = () => {
+    console.log('test');
+};
 
-aeebharw
+test();
 
-AuthenticatorAssertionResponse
-
-
-
-
-
-aerhbaeb
